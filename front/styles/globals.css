@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    font-family: Raleway;
+}
+
+                        /* general stuff */
+.flex-center {
+    @apply flex items-center justify-center;
+}
+
+.flex-center-between {
+    @apply flex items-center justify-between;
+}
+
+.heading {
+    @apply mb-[48px] text-[28px] text-center font-semibold tracking-[6px] uppercase;
+}
+
+.button {
+    @apply bg-[#242434] text-textOrange text-[14px] tracking-[2px] uppercase;
+}
+
+.button-hover {
+    @apply hover:bg-textOrange hover:text-[#242434] hover:cursor-pointer;
+}
+
+.text-hover {
+    @apply hover:text-textOrange hover:cursor-pointer;
+}
+
+.icon-hover {
+    @apply hover:bg-textOrange hover:cursor-pointer;
+}
+
+.passive {
+    @apply hidden;
+}
+
+
+
+                          /* nav */
+
+.nav-li {
+    @apply flex-center h-[30px] tracking-[2px];
+}
+
+.nav-text {
+    @apply text-[12px] text-[#101020] font-semibold uppercase;
+}
+
+.dropdown {
+    @apply w-[236px] absolute top-[30px] left-[18px] bg-primary text-navText py-[16px] hidden group-hover:block;
+}
+
+.dropdown-link {
+    @apply uppercase text-hover text-[12px] font-semibold;
+}
+
+.responsive-dropdown-li {
+    @apply font-black py-[12px] border-t text-[#3a3a3b] tracking-[2px] leading-[1.5em] uppercase;
+}
+
+.responsive-submenu-link {
+    @apply py-[8px] font-semibold text-[0.9rem] tracking-[.2px] capitalize text-hover;
+}
+
+.responsive-submenu-li {
+    @apply pt-[8px] mt-[12px] mb-[8.5px] border-t;
+}
+
+
+
+                        /* SHOP PAGE */
+
+.product-categories-li {
+    @apply mr-[24px] py-[6px] text-[12px] font-semibold tracking-[2px] uppercase;
+}
+
+
+
+
+                        /* CONTACT PAGE */
+
+.input-heading {
+    @apply mb-[5px] text-[13.6px] font-semibold tracking-[2px] uppercase;
+}
+
+.input {
+    @apply w-full h-[49px] px-[17px] border;
+}
+
+
+
+
+                        /* footer */
+.footer-nav {      
+    @apply md:w-[33.33%] p-[24px] text-center box-content text-white;
+}
+
+.footer-nav-heading {
+    @apply text-[0.9em] font-[600] mb-[15px] leading-[1em] tracking-[3px] uppercase;
+}
+
+.footer-nav-li {
+    @apply py-[8px] text-[.8rem] tracking-[3px] font-medium leading-[1.7em] uppercase;
+}
+
+.footer-bottom-text-container {
+    @apply md:w-[33.33%] text-center mt-[12px] px-[12px];
+}
+
+.footer-bottom-text {
+    @apply text-[white] text-[.55em] uppercase tracking-[3px];
+}

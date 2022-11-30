@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collection_types",
+  "info": {
+    "singularName": "collection-type",
+    "pluralName": "collection-types",
+    "displayName": "collection_type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "collection_type"
+    },
+    "shop_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shop-item.shop-item",
+      "mappedBy": "collection_type"
+    }
+  }
+}

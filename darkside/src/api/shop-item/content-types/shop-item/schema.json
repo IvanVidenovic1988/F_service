@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_items",
+  "info": {
+    "singularName": "shop-item",
+    "pluralName": "shop-items",
+    "displayName": "shop_item",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "shop_items"
+    },
+    "collection_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::collection-type.collection-type",
+      "inversedBy": "shop_items"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "shop_items"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "available_from": {
+      "type": "date"
+    },
+    "out_of_stock": {
+      "type": "boolean"
+    },
+    "promoted": {
+      "type": "boolean"
+    },
+    "product_sizes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-size.product-size",
+      "inversedBy": "shop_items"
+    },
+    "promoted_in": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article.article",
+      "inversedBy": "shop_items"
+    }
+  }
+}

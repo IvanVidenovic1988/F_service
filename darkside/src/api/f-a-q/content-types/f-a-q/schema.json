@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "f_a_qs",
+  "info": {
+    "singularName": "f-a-q",
+    "pluralName": "f-a-qs",
+    "displayName": "f_a_q"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "richtext"
+    },
+    "Answer": {
+      "type": "richtext"
+    }
+  }
+}

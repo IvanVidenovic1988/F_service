@@ -1,0 +1,33 @@
+.cross-passive {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease;
+}
+
+.cross-active {
+    width: 12px;
+    height: 12px;
+    position: relative;
+    transform: rotate(45deg);
+    transition: 0.5s ease;
+} 
+
+
+.horizontal {
+    width: 12px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 5px;
+    
+}
+
+.vertical {
+    width: 2px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    left: 5px;
+}
